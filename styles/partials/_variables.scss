@@ -1,0 +1,40 @@
+/* Primary Colors */
+$primary-purple: #a700ff;
+$primary-black: #0e0e0e;
+$primary-white: #ffffff;
+
+/* Additional Primary Colors */
+$light-purple: #d16aff;
+$deep-purple: #8b00d6;
+$slate-gray: #343a40;
+
+/* High Contrast Text Colors */
+$text-primary: #ffffff;
+$text-secondary: #e0e0e0;
+$text-tertiary: #b3b3b3;
+$text-dark: #0e0e0e;
+
+/* Hover & Interactive Colors */
+$hover-purple: #9c00e6;
+$hover-black: #2b2b2b;
+$hover-white: #ffffff66;
+$hover-gray: #5c6368;
+
+/* Gradient Colors */
+$gradient-purple-to-black: linear-gradient(45deg, #a700ff, #0e0e0e);
+$gradient-purple-to-light-purple: linear-gradient(45deg, #a700ff, #d16aff);
+
+/* Accent Colors */
+$accent-purple: #bb4dff;
+$accent-cool-blue: #00b8d4;
+
+/* Backgrounds & Overlays */
+$dark-overlay-bg: rgba(14, 14, 14, 0.8);
+$light-overlay-bg: rgba(255, 255, 255, 0.9);
+$gradient-overlay-purple-black: rgba(167, 0, 255, 0.3);
+$gradient-overlay-purple-cyan: rgba(0, 184, 212, 0.3);
+
+/* Shadows */
+$soft-shadow: rgba(0, 0, 0, 0.2);
+$medium-shadow: rgba(0, 0, 0, 0.3);
+$accent-shadow-purple: rgba(167, 0, 255, 0.2);
