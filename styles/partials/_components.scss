@@ -1,0 +1,138 @@
+// ------------------------
+// Header
+// ------------------------
+
+.nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+  background-image: linear-gradient(45deg, $text-secondary, $text-secondary);
+  &__logo {
+    max-width: 6rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    width: 40rem;
+    list-style: none;
+    display: flex;
+    justify-self: flex-start;
+
+    &-item {
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      &-link,
+      :link,
+      :visited {
+        color: $text-dark;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-purple;
+        }
+      }
+
+      &:hover .nav__menu--sub-menu {
+        display: block;
+
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    // Sub Menu
+    &--sub-menu {
+      list-style: none;
+      margin: 0;
+      padding: 2px 20px;
+      position: absolute;
+      top: 5.7rem;
+      left: -2rem;
+      display: hidden;
+      min-width: 200px;
+      background-color: $hover-black;
+      z-index: 5;
+
+      &,
+      :link,
+      :visited {
+        color: $primary-white;
+      }
+    }
+
+    &--sub-menu {
+      opacity: 1;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    &--sub-link {
+      display: block;
+      padding: 10px 0px;
+      text-decoration: none;
+    }
+  }
+}
+
+// ----------------------------------
+// End ----------------------- Header
+// ----------------------------------
+
+// ----------------------------------
+// ----------------------- Button
+// ----------------------------------
+.button-primary {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: $primary-white;
+  color: $primary-purple;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-black;
+    color: $text-secondary;
+  }
+}
+
+.button-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: 1px solid $primary-white;
+  background-color: transparent;
+  color: $primary-white;
+
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $primary-white;
+    color: $primary-purple;
+  }
+}
+
+// ----------------------------------
+// End ----------------------- Button
+// ----------------------------------

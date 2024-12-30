@@ -7,10 +7,33 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="#"><img src="./assets/logo/Logo-prasanth-01.png" alt="logo" /></a>
+        </div>
+
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">Component Feature </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">Games</a>
+
+            <ul class="nav__menu--sub-menu">
+              <li>
+                <a href="https://dev-kiddo.github.io/GuessNumber-Game-JS/" class="nav__menu--sub-link">Guess My Number </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="wrapper__show-modal">
-      <button class="show-modal__btn">Show modal 1</button>
-      <button class="show-modal__btn">Show modal 2</button>
-      <button class="show-modal__btn">Show modal 3</button>
+      <button class="show-modal__btn button-primary">Show modal 1</button>
+      <button class="show-modal__btn button-primary">Show modal 2</button>
+      <button class="show-modal__btn button-primary">Show modal 3</button>
 
       <div class="modal hidden">
         <button class="modal__close">&times;</button>
