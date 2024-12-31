@@ -51,6 +51,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .wrapper__show-modal .modal {
   position: absolute;
@@ -58,7 +59,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  color: black;
+  color: #0e0e0e;
   background-color: #ffffff;
   padding: 6rem;
   border-radius: 5px;
@@ -198,4 +199,148 @@ p {
 .button-secondary:hover {
   background-color: #ffffff;
   color: #a700ff;
+}
+
+/* LAYOUT */
+.pig-game__wrapper {
+  position: relative;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  filter: blur();
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+}
+.pig-game__wrapper .player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  /* ELEMENTS */
+}
+.pig-game__wrapper .player .name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #a700ff;
+}
+.pig-game__wrapper .player .score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #a700ff;
+  margin-bottom: auto;
+}
+.pig-game__wrapper .player--active {
+  background-color: rgba(167, 0, 255, 0.3);
+}
+.pig-game__wrapper .player--active .name {
+  font-weight: 700;
+}
+.pig-game__wrapper .player--active .score {
+  font-weight: 400;
+}
+.pig-game__wrapper .player--active .current {
+  opacity: 1;
+}
+.pig-game__wrapper .current {
+  background-color: #a700ff;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #ffffff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+.pig-game__wrapper .current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.pig-game__wrapper .current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #a700ff;
+  background: none;
+  border: 1px solid #a700ff;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  background-color: #a700ff;
+  color: #ffffff;
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--new {
+  top: 4rem;
+}
+
+.btn--roll {
+  top: 39.3rem;
+}
+
+.btn--hold {
+  top: 46.1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

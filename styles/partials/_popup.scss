@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   .modal {
     position: absolute;
@@ -14,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    color: black;
+    color: $primary-black;
 
     background-color: $primary-white;
     padding: 6rem;
